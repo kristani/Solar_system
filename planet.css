@@ -1,0 +1,60 @@
+body {
+	background-color: #00001a; 
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	color: #ffffff; 
+	text-align: center;
+	margin-bottom: 40px;
+}
+article{
+	display: inline-flex;
+	align-items: center;
+}
+#buttons {
+	/*float: right; */
+	text-align: center; 
+	width: 210px; 
+	height: 300px; 
+	padding: 1em; 
+	/*border: solid white 1px;*/
+}
+
+input[type="button"] {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    border: solid 2px #f2f2f2;
+    background-color : transparent;
+    color: #e6e6e6;
+    margin: 3px;
+    }
+
+input[type="button"]:hover {
+	border-width: 1px;
+    font-weight: bold;
+    }
+
+input[type="button"]:active {
+    border: none;
+    font: 15px ; 
+    font-weight: bold;
+    background-color : rgb(242, 242, 242);
+    color: #00001a;
+    }
+
+#text1{
+	font-size: 14px;
+	padding: 4px;
+	border: solid white 1px;
+}
+
+#choosing {
+	display: none; 
+	text-align: left; 
+	padding: 5px;
+	font-size: 13px;
+	border: solid white 1px;
+}

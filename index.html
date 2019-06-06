@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Planetary system</title>
+		<link rel="stylesheet" href="planet.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body onload="init();">
+		<header>
+			<h1>Planetary System</h1>
+		</header>
+		<!-- <div id="debug">D: </div>  -->
+		<article>
+			<section id="animation">
+				<div>
+					<canvas id="canvas" width="1000" height="580">
+					This text is displayed if your browser does not support HTML5 Canvas.
+					</canvas>
+				</div>
+			</section>
+			
+			<section id="buttons">
+				<input type="button" name="start" value="START" onclick="start();">
+				<input type="button" name="stop" value="STOP" onclick="stop();"> 
+				<input type="button" name="reset" value="RESET" onclick="reset();">
+				
+				<div id="text1" style="margin-top: 20px;">Click to choose planets</div>
+				<div id="choosing">
+					<div style="margin-bottom: 7px;">
+				      <input type="checkbox" id="all" name="planets" value="all">
+				      <label for="all">Check All</label>
+				    </div>
+					<div>
+				      <input type="checkbox" id="mercury" name="planets" value="mercury">
+				      <label for="mercury">Mercury</label>
+				    </div>
+				    <div>
+				      <input type="checkbox" id="venus" name="planets" value="venus">
+				      <label for="venus">Venus</label>
+				    </div>
+				    <div>
+				      <input type="checkbox" id="earth" name="planets" value="earth">
+				      <label for="earth">Earth</label>
+				    </div>
+				    <div>
+				      <input type="checkbox" id="mars" name="planets" value="mars">
+				      <label for="mars">Mars</label>
+				    </div>
+				</div>
+			</section>
+		</article>
+
+		<script type="text/javascript" src="planet.js"></script>
+	</body>
+</html>
